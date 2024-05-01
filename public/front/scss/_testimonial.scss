@@ -1,0 +1,156 @@
+/*======================================
+    Testimonial CSS
+========================================*/
+.testimonials {
+    background-color: $gray;
+    position: relative;
+    padding-bottom: 180px;
+
+    @media #{$md} {
+        padding-bottom: 120px;
+    }
+
+    @media #{$xs} {
+        padding-bottom: 120px;
+    }
+
+    &.style2 {
+        .single-testimonial {
+            .shape1 {
+                top: 0;
+                left: -30px;
+                height: 90px;
+                width: 90px;
+            }
+
+            .shape2 {
+                right: 20px;
+                bottom: 20px;
+            }
+        }
+    }
+
+    .testimonial-slider {
+        margin: 0;
+    }
+
+    .tns-nav {
+        text-align: center;
+        position: absolute;
+        bottom: 90px;
+        transform: translateX(-50%);
+        width: 100%;
+        left: 50%;
+        z-index: 9;
+        margin: 0;
+
+        @media #{$md} {
+            bottom: 55px;
+        }
+
+        @media #{$xs} {
+            bottom: 55px;
+        }
+
+        button {
+            height: 6px;
+            width: 14px;
+            background-color: #D0CCCC;
+            border-radius: 5px;
+            display: inline-block;
+            border: none;
+            margin: 0px 5px;
+            transition: all 0.4s ease;
+
+            &.tns-nav-active {
+                width: 25px;
+                background-color: $theme-color;
+            }
+        }
+    }
+
+    .single-testimonial {
+        background-color: $white;
+        padding: 70px 50px;
+        transition: all 0.4s ease;
+        border-radius: 6px;
+        overflow: hidden;
+        position: relative;
+
+        @media #{$xs} {
+            padding: 50px 40px;
+        }
+
+        .shape1 {
+            position: absolute;
+            left: 40px;
+            top: 0;
+        }
+
+        .shape2 {
+            position: absolute;
+            right: -20px;
+            bottom: -20px;
+        }
+
+        .inner-content {
+            position: relative;
+            z-index: 0;
+        }
+
+        .qote-icon {
+            font-size: 70px;
+            color: #3333331a;
+            position: absolute;
+            opacity: 0.2;
+            right: 0;
+            top: 0;
+            z-index: -1;
+        }
+
+        .text {
+            h4 {
+                font-size: 16px;
+                font-weight: 600;
+                line-height: 28px;
+
+                @media #{$md} {
+                    bottom: 55px;
+                }
+
+                @media #{$xs} {
+                    font-size: 15px;
+                    line-height: 28px;
+                }
+            }
+        }
+
+        .author {
+            position: relative;
+            padding-left: 70px;
+            margin-top: 40px;
+
+            img {
+                height: 50px;
+                width: 50px;
+                border-radius: 50%;
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+
+            h4 {
+                font-size: 17px;
+                font-weight: 600;
+
+                span {
+                    color: $theme-color;
+                    display: block;
+                    font-size: 14px;
+                    font-weight: 400;
+                    margin-top: 4px;
+                }
+            }
+        }
+    }
+}

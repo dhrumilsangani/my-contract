@@ -1,0 +1,100 @@
+/*======================================
+    Process Area CSS
+========================================*/
+.process {
+    img {
+        width: 100%;
+    }
+
+    .content {
+        @media #{$laptop} {
+            padding-left: 50px;
+        }
+
+        @media #{$desktop} {
+            padding-left: 50px;
+        }
+
+        @media #{$md} {
+            margin-top: 60px;
+        }
+
+        @media #{$xs} {
+            margin-top: 50px;
+        }
+
+        h4 {
+            color: $theme-color;
+            font-size: 15px;
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 35px;
+            font-weight: 700;
+            line-height: 48px;
+
+            @media #{$md} {
+                font-size: 30px;
+                font-weight: 700;
+                line-height: 42px;
+            }
+
+            @media #{$xs} {
+                font-size: 24px;
+                font-weight: 700;
+                line-height: 34px;
+            }
+        }
+
+        p {
+            font-size: 16px;
+            margin-top: 25px;
+        }
+
+        .list {
+
+            .single-list {
+                position: relative;
+                padding-left: 80px;
+                margin-top: 50px;
+                display: inline-block;
+
+                .list-icon {
+                    height: 60px;
+                    width: 60px;
+                    line-height: 60px;
+                    text-align: center;
+                    display: block;
+                    border-radius: 50%;
+                    color: #3080E3;
+                    font-size: 22px;
+                    background-color: #fff;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    box-shadow: 0px 7px 10px #0000000a;
+                    transition: all 0.4s ease;
+                }
+
+                &:hover {
+                    .list-icon {
+                        background-color: $theme-color;
+                        color: $white;
+                    }
+                }
+
+                h4 {
+                    color: $black;
+                    font-size: 15px;
+                    margin-bottom: 8px;
+                }
+
+                p {
+                    margin: 0;
+                }
+            }
+        }
+    }
+}

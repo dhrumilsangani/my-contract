@@ -1,0 +1,193 @@
+/*======================================
+    Bill of Sale CSS
+========================================*/
+
+.main-title {
+    h3 {
+        margin-bottom: 1.5rem;
+    }
+}
+.form-label{
+    color: #151515;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+}
+.form-control {
+    color: #151515;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+}
+.form-select {
+    color: #151515;
+    font-weight: 500;
+    border: 1px solid #DEDEDE;
+    transition: all 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+}
+.form-select:focus {
+    border: 1px solid #07689f;
+    border-color: #07689f;
+    box-shadow: none !important;
+}
+
+.documents-area {
+    .box-item {
+        .row {
+            justify-content: space-between;
+        }
+    }
+    .btn {
+        .form-check-input {
+            display: none;
+        }
+        .icon-box {
+            margin-bottom: 10px;
+        }
+    }
+    .btn-outline-secondary {
+        width: 16%;
+        color: #151515;
+        padding: 1.2rem 0.75rem;
+        font-weight: 500;
+        border-radius: 10px;
+        border: 1px solid #DEDEDE;
+        background-color: #FFFFFF;
+        box-shadow: 0 15px 30px rgba(0,0,0,0.05);
+        transition: all 0.3s ease;
+        font-family: 'Poppins', sans-serif;
+    }
+    .btn-outline-secondary.active {
+        border: 1px solid #FD723B;
+    }
+    .btn-outline-secondary {
+        &:hover {
+            border: 1px solid #FD723B;
+        }
+    }
+}
+
+.process-level-area {
+    .info {
+        width: 100%;
+        padding: 2rem 0;
+        h5 {
+            margin-bottom: 0.5rem;
+        }
+        p {
+            font-size: 16px;
+            color: #727272;
+            line-height: 26px;
+        }
+    }    
+    .button {
+        width: 100%;
+        .btn.prev-btn {
+            color: #151515;
+            background-color: #DEDEDE;
+        }
+        .btn.prev-btn {
+            &:hover {
+                background-color: #B3B3B3;
+            }
+        }
+    }
+    .skip-content {
+        color: #07689f;
+        padding-top: 1rem;
+    }
+    .skip-content {
+        &:hover {
+            color: #151515;
+        }
+    }
+    .faq-area {
+        width: 100%;
+        padding: 2rem;
+        border-radius: 12px;
+        background-color: #FFFFFF;
+        box-shadow: 0 0 30px rgba(0,0,0,0.12);
+        h5 {
+            color: #151515;
+            font-size: 18px;
+            margin-bottom: 1rem;
+        }
+        li {
+            margin-bottom: 0.5rem;
+            a {
+                color: #07689f;
+                font-size: 15px;
+                font-weight: 500;
+                transition: all 0.3s ease;
+                &:hover {
+                    color: #151515;
+                }
+            }
+        }
+        li {
+            &:last-child {
+                margin-bottom: 0rem;
+            }
+        }
+    }
+    .vehicle-details-area {
+        form {
+            .question-icon {
+                color: #07689F;
+                right: 15px;
+                top: 40px;
+                font-size: 20px;
+                position: absolute;
+                &::after {
+                    content: "\f29c";
+                    font-family: FontAwesome;
+                }
+            }
+        }
+    }
+}
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .main-title {
+        h3 {
+            font-size: 24px;
+        }
+    }
+    .documents-area {
+        .btn-outline-secondary {
+            width: 30%;
+            margin-bottom: 1.5rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .main-title {
+        h3 {
+            font-size: 20px;
+        }
+    }
+    .documents-area {
+        .btn-outline-secondary {
+            width: 46%;
+            margin-bottom: 1.5rem;
+            font-size: 0.8rem;
+        }
+        .btn {
+            .icon-box {
+                img {
+                    width: 76px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .documents-area {
+        .btn-outline-secondary {
+            width: 100%;
+        }
+    }
+}

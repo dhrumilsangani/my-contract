@@ -1,0 +1,217 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
+/* PAGE STYLES */
+:root { font-size: 16px; }
+* { box-sizing: border-box; }
+html {
+  font-family: 'Montserrat', sans-serif;
+}
+.pin-title {
+  position: fixed;
+  top: 1.875rem;
+  bottom: 1.875rem;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Exo', sans-serif;
+  font-weight: 800;
+  font-size: 800%;
+  letter-spacing: 0.0625rem;
+  color: #f3f3f3;
+  user-select: none;
+  z-index: -1;
+  text-align: center;
+}
+
+
+/* COOKIE POPUP STYLES */
+
+.cookie-popup {
+
+  font-size: 0.875rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: fixed;
+  bottom: -6.25rem;
+  left: 1.25rem;
+  right: 1.25rem;
+  padding: 0.625rem 0.9375rem;
+  box-shadow: 0 0 0.625rem 0 rgba(0,0,0, .15);
+  line-height: 150%;
+  transition: opacity .5s;
+  opacity: 0;
+}
+.cookie-popup--short {
+  right: none;
+  width: 21.875rem;
+}
+.cookie-popup--dark {
+  background: #000;
+  color: #fff;
+}
+.cookie-popup--not-accepted {
+  opacity: 1;
+  animation: cookie-popup-in .5s ease forwards;
+}
+.cookie-popup--accepted {
+  opacity: 0;
+}
+.cookie-popup a {
+  color: skyblue;
+}
+.cookie-popup a:visited {
+  color: skyblue;
+  text-decoration: none;
+}
+.cookie-popup-actions {
+  flex: 1;
+  text-align: right;
+}
+.cookie-popup-actions button {
+  color: orange;
+  border: none;
+  background: none;
+  font-family: inherit;
+  font-style: inherit;
+  font-size: inherit;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 	0.75rem;
+  padding: 0;
+  cursor: pointer;
+}
+.cookie-popup-actions button:hover {
+  text-decoration: underline;
+}
+
+@keyframes cookie-popup-in {
+  from { bottom: -6.25rem; }
+  to { bottom: 1.25rem; }
+}
+.error{
+  color: red;
+}
+label,
+input,
+button {
+  border: 0;
+  margin-bottom: 3px;
+  display: block;
+  width: 100%;
+}
+.common_box_body {
+  padding: 15px;
+  border: 12px solid #28BAA2;
+  border-color: #28BAA2;
+  border-radius: 15px;
+  margin-top: 10px;
+  background: #d4edda;
+}
+
+/*New CSS - 21-06-2021*/
+.contact-us .contact-form .form-control:focus,
+.contact-us .contact-form select:focus {
+    text-decoration: none;
+    outline: none;
+    outline: none !important;
+    border-color: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    border-color: #07689f;
+}
+.account-login .form-group label {
+  width: auto;
+}
+/*
+.contact-us .contact-form div.button {
+      display: flex;
+}*/
+.contact-us .contact-form div.button .btn {
+      padding: 10px 15px;
+}
+.contact-us .contact-form .form-group select,
+.contact-us .contact-form .form-group input {
+  height: auto;
+  padding: 10px 20px;
+  width: 100%;
+      border-radius: 8px;
+          border-color: #eee;
+}
+.contact-us .contact-form  .form-control {
+  padding: 10px 20px;
+  margin-bottom: 0;
+}
+.contact-us .contact-form .form-group {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+.type-datetimepicker3 {position: relative;}
+.type-datetimepicker3 .input-group-addon {
+  position: absolute;
+  right: 24px;
+    top: 27%;
+    pointer-events: none;
+  }
+
+  .contact-us .contact-form label {
+    font-weight: 500;
+  }
+  .form-group label.error {
+        top: auto;
+    transform: inherit;
+    bottom: -19px;
+    font-size: 12px;
+    left: 0;
+  }
+.account-login .form-group {
+  margin-bottom: 20px;
+}
+.header .navbar-brand img {border-radius: 250px;}
+.astrick {
+  color: red;
+}
+.step-process ul li .nav-link:not(.active),
+.header-area .nav-pills li .nav-link.active {
+  pointer-events: none;
+}
+
+.priceTable{
+  padding: 50px 35px 10px 35px !important;
+}
+
+.contract-detail .custom-p p {
+  min-height: 48px !important;
+}
+
+.single-service a.subCat {
+  margin-top: 0px !important;
+}
+
+
+footer.section {
+  padding-bottom: 30px;
+}
+.footer .copyright-txt {
+  width: 100%;
+  padding-top: 1rem;
+  border-top: 1px solid #eee;
+  text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+    .contact-us .contact-form div.button {
+        flex-wrap: wrap;
+    }
+    .button >.btn {
+      margin-right: 0;
+    }
+    .header .navbar-brand img {
+    width: 60px;
+  }
+    .header {
+    padding: 10px 0 !important;
+}
+}
+

@@ -1,0 +1,45 @@
+/*=============================
+	About App CSS
+===============================*/
+
+.achievement {
+
+    .single-achievement {
+        @media #{$xs} {
+            padding: 20px 0;
+        }
+
+        h3 {
+            font-size: 32px;
+            font-weight: 700;
+            position: relative;
+            z-index: 0;
+            display: inline-block;
+
+            @media #{$md} {
+                font-size: 30px;
+            }
+
+            @media #{$xs} {
+                font-size: 26px;
+            }
+
+            .shape {
+                position: absolute;
+                left: -20px;
+                top: -15px;
+                z-index: -1;
+                height: 55px;
+                width: 55px;
+            }
+        }
+
+        p {
+            text-transform: capitalize;
+
+            @media #{$xs} {
+                margin-top: 10px;
+            }
+        }
+    }
+}

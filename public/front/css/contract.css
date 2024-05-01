@@ -1,0 +1,419 @@
+/*====================================== Bill of Sale CSS ==============================================*/
+.main-title h3 {
+    margin-bottom: 1.5rem;
+    text-transform: capitalize;
+}
+.documents-area .box-item .row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 2em 3em;
+}
+.documents-area .btn .form-check-input {
+    display: none;
+}
+.documents-area .btn .icon-box {
+    margin-bottom: 10px;
+}
+.documents-area .btn-outline-secondary {
+    width: 100%;
+    color: #151515;
+    padding: 1.2rem 0.75rem;
+    font-weight: 500;
+    border-radius: 10px;
+    border: 1px solid #dedede;
+    background-color: #fff;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+}
+.documents-area .btn-outline-secondary.active {
+    border: 1px solid #fd723b;
+}
+.documents-area .btn-outline-secondary:hover {
+    border: 1px solid #fd723b;
+}
+
+
+
+/*====================================== Header Content CSS ========================================*/
+.header-area {
+    padding: 2.5rem 1.5rem;
+    margin-bottom: 3rem;
+    background-color: #f4f7fa;
+    position: relative;
+}
+.header-area h3 {
+    margin-bottom: 1.5rem;
+}
+.header-area .step-process {
+  width: 85%;
+}
+.header-area .list-items .single-list {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    position: relative;
+}
+.header-area .list-items .single-list .list-icon {
+    width: 60px;
+    height: 54px;
+    text-align: right;
+    margin-right: 1rem;
+    position: relative;
+}
+.header-area .list-items .single-list h4 {
+    max-width: 216px;
+    color: #727272;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 30px;
+}
+.header-area .progress {
+    border: 1px solid #fd723b;
+    background-color: #eaeaea;
+}
+.header-area .progress .progress-bar {
+    background-color: #fd723b;
+}
+
+/*======================================
+ Head CSS
+ ========================================*/
+ .header-area .nav-pills li .nav-link {
+    color: #727272;
+    padding: 0.5rem 1.5rem;
+    margin: 0 auto;
+    width: auto;
+    font-size: 22px;
+    font-weight: 400;
+    border-radius: 1.5rem;
+    border: 2px solid transparent;
+    font-family: 'Poppins', sans-serif;
+  }
+  .header-area .nav-pills li .nav-link.active {
+    color: #07689F;
+    border: 2px solid #07689F;
+    background-color: #FFFFFF;
+  }
+  .header-area .progress {
+    width: 100%;
+    border: 1px solid #FD723B;
+    background-color: #EAEAEA;
+  }
+  .header-area .progress .progress-bar {
+    background-color: #FD723B;
+  }
+  
+  .header-area .step-process ul .nav-item {
+    flex-grow: 1;
+  }
+  
+  
+  
+  /*======================================
+   Bill of Sale CSS
+   ========================================*/
+  .form-label {
+    color: #6aa4c5;
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: capitalize;
+    font-family: 'Poppins', sans-serif;
+  }
+  .form-control {
+    color: #151515;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 0;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 2px solid #6aa4c5;
+  }
+  .form-select {
+    color: #151515;
+    font-weight: 500;
+    border-radius: 0;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 2px solid #6aa4c5;
+    transition: all 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+  }
+  .form-select:focus {
+    border-radius: 0;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 2px solid #07689f;
+    border-color: #07689f;
+    box-shadow: none !important;
+  }
+
+  .form-check-inline .form-check-label {
+    font-size: 20px;
+  }
+
+  .description {
+    display:none;
+    position:absolute;
+    border:1px solid #6aa4c5;
+    width:400px;
+    box-shadow: 0 0 30px rgb(0 0 0 / 12%);
+    padding: 1rem;
+    border-radius: 6px;
+    top: 50px;
+    z-index: 99;
+    background-color: #fff;
+}
+
+  ::-webkit-input-placeholder { 
+    font-size: 18px;
+  }
+  ::-moz-placeholder {
+    font-size: 18px;
+  }
+  :-ms-input-placeholder {
+    font-size: 18px;
+  }
+  :-moz-placeholder { 
+    font-size: 18px;
+  }
+
+  .process-level-area .info {
+    width: 100%;
+    padding-bottom: 2rem;
+    color: #727272;
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .process-level-area .info h5 {
+    margin-bottom: 0.5rem;
+  }
+  .process-level-area .info p {
+    font-size: 16px;
+    color: #727272;
+    line-height: 26px;
+  }
+  .process-level-area .button {
+    width: 100%;
+  }
+  .process-level-area .button .btn.prev-btn {
+    color: #151515;
+    background-color: #DEDEDE;
+  }
+  .process-level-area .button .btn.prev-btn:hover {
+    background-color: #B3B3B3;
+  }
+  .process-level-area .skip-content {
+    color: #07689f;
+    padding-top: 1rem;
+    font-size: 18px;
+  }
+  .process-level-area .skip-content:hover {
+    color: #151515;
+  }
+  .process-level-area .faq-area {
+    width: 100%;
+    padding: 2rem;
+    border-radius: 12px;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.12);
+  }
+  .process-level-area .faq-area h5 {
+    color: #151515;
+    font-size: 22px;
+    margin-bottom: 1rem;
+  }
+  .process-level-area .faq-area li {
+    margin-bottom: 0.5rem;
+    position: relative;
+  }
+  .process-level-area .faq-area li a {
+    color: #07689f;
+    font-size: 20px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  .process-level-area .faq-area li a:hover {
+    color: #151515;
+  }
+  .process-level-area .faq-area li:last-child {
+    margin-bottom: 0rem;
+  }
+  .process-level-area .vehicle-details-area form .question-icon {
+    color: #07689F;
+    right: 15px;
+    top: 40px;
+    font-size: 20px;
+    position: absolute;
+  }
+  .process-level-area .vehicle-details-area form .question-icon::after {
+    content: "\f29c";
+    font-family: FontAwesome;
+  }
+  .temp .btn{
+    width: auto;
+  }
+  .services.style2 .single-service {
+    background-color: #FFFFFF;
+  }
+  .services.style2 .subCat{
+    width: 100%;
+    position: relative;
+  }
+  .single-service .service-info {
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+.single-service .service-info .service-icon {
+    margin-right: 15px;
+}
+.single-service .service-info .service-icon img{
+    width: 60px;
+}
+.single-service .service-info h3{
+    max-width: 240px;
+    margin: 0px;
+    line-height: 30px;
+}
+
+.single-service .service-icon {
+  width: 85px;
+  height: 85px;
+  line-height: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.single-service > p{
+  margin-bottom: 5px;
+}
+.single-service > p:last-child{
+  margin-bottom: 0px;
+}
+.services .single-service a{
+  font-size: 18px;
+}
+
+.services .single-service a:hover{
+  color: #FD723B;
+}
+
+.save-data .sa-button-container .cancel{
+  width: auto;
+  color: #151515;
+  background-color: #DEDEDE !important;
+}
+.save-data .sa-button-container .confirm{
+  color: #FFFFFF;
+  background-color: #07689f !important;
+}
+.save-data .sa-button-container{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+}
+  
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .main-title h3 {
+        font-size: 24px;
+   }
+    .documents-area .btn-outline-secondary {
+        width: 30%;
+        margin-bottom: 1.5rem;
+   }
+   .documents-area .box-item .row{
+    grid-template-columns: 1fr 1fr 1fr;
+   }
+
+   .header-area .step-process {
+    width: 100%;
+  }
+
+   .header-area h3 {
+    font-size: 24px;
+}
+.header-area .list-items .single-list {
+    justify-content: center;
+}
+.header-area .list-items .single-list .list-icon {
+    text-align: center;
+    margin-right: 0px;
+    margin-bottom: 1rem;
+}
+.header-area .list-items .single-list h4 {
+    font-size: 20px;
+    text-align: center;
+}
+.header-area .step-process .nav-pills .nav-link {
+    padding: 0.5rem 1rem;
+    font-size: 13px;
+  }
+}
+@media only screen and (max-width: 767px) {
+    .main-title h3 {
+        font-size: 20px;
+   }
+    .documents-area .btn-outline-secondary {
+        font-size: 0.8rem;
+   }
+    .documents-area .btn .icon-box img {
+        width: 76px;
+   }
+
+   .documents-area .box-item .row{
+      grid-template-columns: 1fr 1fr;
+      gap: 2em 2em;
+   }
+  .widget-area {
+    padding: 2.5rem 0rem;
+  }
+
+   .header-area h3 {
+    font-size: 20px;
+}
+.header-area .list-items .single-list .list-icon {
+    width: 50px;
+    text-align: center;
+}
+.header-area .list-items .single-list .list-icon svg {
+    width: 40px;
+}
+.header-area .list-items .single-list h4 {
+    font-size: 18px;
+    line-height: 26px;
+}
+.header-area .step-process {
+    overflow-y: auto;
+    position: relative;
+  }
+  .header-area .step-process .nav-pills {
+    width: 700px;
+  }
+  .header-area .step-process .nav-pills .nav-link {
+    padding: 0.5rem 1rem;
+    font-size: 13px;
+  }
+  .header-area .step-process .progress {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .documents-area .box-item .row{
+    grid-template-columns: 1fr;
+  }
+
+  .header-area .list-items .single-list {
+        justify-content: center;
+    }
+    .header-area .list-items .single-list h4 {
+        text-align: center;
+    }
+}
+

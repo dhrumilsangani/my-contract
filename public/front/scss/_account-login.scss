@@ -1,0 +1,174 @@
+/*======================================
+	Account Login CSS
+========================================*/
+.account-login {
+    background-color: $gray;
+
+    .inner-content {
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.075);
+    }
+
+    .login-form {
+        padding: 70px;
+        background-color: $white;
+        border: none;
+
+        @media #{$md} {
+            padding: 50px;
+        }
+
+        @media #{$xs} {
+            padding: 35px;
+        }
+
+        .card-body {
+            padding: 0;
+        }
+
+        .title {
+            margin-bottom: 45px;
+
+            @media #{$xs} {
+                margin-bottom: 30px;
+            }
+
+            h3 {
+                font-size: 25px;
+                font-weight: 700;
+                color: $black;
+                margin-bottom: 10px;
+
+                @media #{$xs} {
+                    font-size: 22px;
+                }
+            }
+        }
+
+        .input-head {}
+    }
+
+    .bottom-content {
+        margin-top: 25px;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+        position: relative;
+
+        label {
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 9;
+        }
+
+        .form-control {
+            padding: 0 18px;
+            transition: all 0.4s ease;
+            border: 1px solid #eee;
+            background-color: #fff;
+            color: #505050;
+            font-size: 15px;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            height: 52px;
+            border-radius: 8px !important;
+            overflow: hidden;
+            width: 100%;
+            padding-left: 55px;
+
+            &:focus {
+                border-color: $theme-color;
+                box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.233);
+            }
+        }
+    }
+
+    .lost-pass {
+        color: #888;
+
+        &:hover {
+            color: $theme-color;
+        }
+    }
+
+    .button {
+        margin-top: 40px;
+        display: flex;
+        justify-content: space-between;
+
+        @media #{$xs} {
+            display: block;
+            margin-top: 30px;
+
+            .btn {
+                margin-bottom: 13px;
+
+                &:last-child {
+                    margin: 0;
+                }
+            }
+        }
+
+        .btn {
+            padding: 14px 40px;
+            margin-right: 20px;
+            width: 100%;
+
+            &:last-child {
+                margin: 0;
+            }
+
+            &.alt {
+                background-color: $white;
+                color: $black;
+                box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.055);
+
+                &:hover {
+                    background-color: $theme-color2;
+                    color: $white;
+                }
+            }
+        }
+    }
+
+    .alt-option {
+        margin-top: 60px;
+
+        @media #{$xs} {
+            margin-top: 35px;
+        }
+
+        li {
+            font-weight: 500;
+
+            @media #{$xs} {
+                margin-top: 5px;
+            }
+
+            span {
+                color: $body-color;
+                display: inline-block;
+            }
+
+            display: inline-block;
+            margin-right: 15px;
+
+            &:last-child {
+                margin: 0;
+            }
+
+            a {
+                color: $theme-color;
+
+                &:hover {
+                    color: $theme-color2;
+                }
+            }
+        }
+    }
+}

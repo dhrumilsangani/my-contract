@@ -1,0 +1,192 @@
+/*======================================
+    About Us CSS
+========================================*/
+.about {
+    position: relative;
+    background-color: $black;
+    z-index: 0;
+
+    .shape-1 {
+        position: absolute;
+        width: 520px;
+        height: 520px;
+        left: -184.03px;
+        top: 0;
+        z-index: -1;
+
+        img {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+    }
+
+    .shape-2 {
+        position: absolute;
+        width: 665px;
+        height: 665px;
+        right: -126px;
+        bottom: -66px;
+        z-index: -1;
+
+        img {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .content {
+        @media #{$laptop} {
+            padding-right: 80px;
+        }
+
+        @media #{$desktop} {
+            padding-right: 80px;
+        }
+
+        @media #{$md} {
+            margin-bottom: 60px;
+        }
+
+        @media #{$xs} {
+            margin-bottom: 50px;
+        }
+
+        h4 {
+            color: $theme-color;
+            font-size: 15px;
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 35px;
+            font-weight: 700;
+            line-height: 48px;
+            color: $white;
+
+            @media #{$md} {
+                font-size: 30px;
+                font-weight: 700;
+                line-height: 42px;
+            }
+
+            @media #{$xs} {
+                font-size: 24px;
+                font-weight: 700;
+                line-height: 34px;
+            }
+        }
+
+        p {
+            font-size: 16px;
+            margin-top: 25px;
+            color: $white;
+        }
+
+        .action-button {
+            margin-top: 50px;
+            display: block;
+
+            .btn-icon {
+                height: 44px;
+                width: 44px;
+                line-height: 44px;
+                text-align: center;
+                color: $white;
+                background-color: $theme-color;
+                border-radius: 50%;
+                float: left;
+                margin-right: 15px;
+                font-size: 20px;
+            }
+
+            h4 {
+                display: inline-block;
+                color: inherit;
+                font-size: 16px;
+                font-weight: 400;
+                font-family: roboto;
+                color: $white;
+
+                a {
+                    color: $theme-color;
+                    display: block;
+                    font-size: 15px;
+                    margin-top: 3px;
+
+                    &:hover {
+                        letter-spacing: 1px;
+                    }
+
+                    i {
+                        display: inline-block;
+                        margin-left: 8px;
+                        font-size: 20px;
+                        position: relative;
+                        top: 3px;
+                    }
+                }
+            }
+        }
+    }
+
+    .why-choose-list {
+        margin-top: 60px;
+
+        li {
+            position: relative;
+            margin-bottom: 45px;
+
+            &:hover {
+                .number {
+                    background-color: $theme-color2;
+                }
+            }
+
+            &:last-child {
+                margin: 0;
+            }
+
+            .number {
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: $theme-color;
+                color: $white;
+                position: absolute;
+                left: 0;
+                top: 0;
+                transition: all 0.4s ease-in-out;
+                font-size: 16px;
+            }
+
+            .list-content {
+                display: inline-block;
+                padding: 0;
+                padding-left: 80px;
+
+                h3 {
+                    font-size: 19px;
+                    font-weight: 600;
+                    display: block;
+                    color: $white;
+                }
+
+                p {
+                    margin: 0;
+                    margin-top: 15px;
+                    color: rgb(206, 206, 206);
+                }
+            }
+        }
+    }
+}
